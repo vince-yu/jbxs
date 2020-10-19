@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SDRepoCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="76"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="75.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_good_selected" translatesAutoresizingMaskIntoConstraints="NO" id="UXA-Ep-Kur">
+                        <rect key="frame" x="15" y="27" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="ccO-n9-hKz"/>
+                            <constraint firstAttribute="width" constant="22" id="kx5-YR-Q8y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xOs-kQ-tCt">
+                        <rect key="frame" x="52" y="21" width="253" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="XnV-Zk-2ek"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Semibold" family="PingFang SC" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5O-6F-C1l">
+                        <rect key="frame" x="52" y="46" width="253" height="12"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="12" id="6pZ-so-qRj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="13"/>
+                        <color key="textColor" red="0.51764705882352935" green="0.51764705882352935" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xOs-kQ-tCt" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="52" id="PA1-U8-Ar1"/>
+                    <constraint firstAttribute="trailing" secondItem="xOs-kQ-tCt" secondAttribute="trailing" constant="15" id="WcR-mX-5Id"/>
+                    <constraint firstItem="A5O-6F-C1l" firstAttribute="top" secondItem="xOs-kQ-tCt" secondAttribute="bottom" constant="9" id="Wdz-FC-r71"/>
+                    <constraint firstItem="xOs-kQ-tCt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="21" id="Z0d-Jb-ose"/>
+                    <constraint firstItem="UXA-Ep-Kur" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m9d-J8-THX"/>
+                    <constraint firstAttribute="bottom" secondItem="A5O-6F-C1l" secondAttribute="bottom" constant="17.5" id="nGw-bW-jp1"/>
+                    <constraint firstAttribute="trailing" secondItem="A5O-6F-C1l" secondAttribute="trailing" constant="15" id="pFS-gD-AdV"/>
+                    <constraint firstItem="UXA-Ep-Kur" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="tt7-tY-XOu"/>
+                    <constraint firstItem="A5O-6F-C1l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="52" id="vfW-uw-KnR"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="A5O-6F-C1l" id="jtK-6W-qnH"/>
+                <outlet property="addressLeft" destination="vfW-uw-KnR" id="1bm-0l-iUT"/>
+                <outlet property="nameLabel" destination="xOs-kQ-tCt" id="s9g-Ua-fMb"/>
+                <outlet property="nameLeft" destination="PA1-U8-Ar1" id="010-b1-Anw"/>
+                <outlet property="seletedImage" destination="UXA-Ep-Kur" id="65H-p3-sPc"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cart_good_selected" width="22" height="22"/>
+    </resources>
+</document>

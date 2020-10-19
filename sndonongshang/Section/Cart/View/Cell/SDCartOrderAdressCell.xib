@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SDCartOrderAdressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="115"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="114.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zhq-qA-5i9">
+                        <rect key="frame" x="105" y="42.5" width="110" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="JgV-Xd-eIc"/>
+                            <constraint firstAttribute="width" constant="110" id="gxz-vh-9hM"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="13"/>
+                        <state key="normal" title="+新建收货地址">
+                            <color key="titleColor" red="0.074509803921568626" green="0.078431372549019607" blue="0.074509803921568626" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_select_address" translatesAutoresizingMaskIntoConstraints="NO" id="fzn-QM-Ofw">
+                        <rect key="frame" x="294" y="65" width="6" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="TXA-Li-GWq"/>
+                            <constraint firstAttribute="width" constant="6" id="lIW-ed-otV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qk6-vi-56O">
+                        <rect key="frame" x="20" y="30" width="280" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="dzL-Pd-XHX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJu-cw-PBS">
+                        <rect key="frame" x="20" y="65" width="254" height="22.5"/>
+                        <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Qk6-vi-56O" secondAttribute="trailing" constant="20" id="AaZ-P9-P7h"/>
+                    <constraint firstItem="Zhq-qA-5i9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="CGO-0i-KIH"/>
+                    <constraint firstItem="fzn-QM-Ofw" firstAttribute="leading" secondItem="wJu-cw-PBS" secondAttribute="trailing" constant="20" id="Lh3-J5-x5h"/>
+                    <constraint firstItem="fzn-QM-Ofw" firstAttribute="top" secondItem="wJu-cw-PBS" secondAttribute="top" id="QYG-qJ-gU3"/>
+                    <constraint firstItem="wJu-cw-PBS" firstAttribute="top" secondItem="Qk6-vi-56O" secondAttribute="bottom" constant="18" id="bQ9-fH-eQA"/>
+                    <constraint firstItem="Qk6-vi-56O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="eT0-VQ-Y6e"/>
+                    <constraint firstItem="Zhq-qA-5i9" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="gjI-1j-VG9"/>
+                    <constraint firstItem="Qk6-vi-56O" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="lBr-oY-vha"/>
+                    <constraint firstAttribute="trailing" secondItem="fzn-QM-Ofw" secondAttribute="trailing" constant="20" id="nHI-tg-8oj"/>
+                    <constraint firstItem="wJu-cw-PBS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vUD-8W-ZgN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addBtn" destination="Zhq-qA-5i9" id="3bk-wU-Bwm"/>
+                <outlet property="addressLabel" destination="wJu-cw-PBS" id="NbQ-Oo-l0m"/>
+                <outlet property="chooseImageView" destination="fzn-QM-Ofw" id="P6H-BI-MOg"/>
+                <outlet property="nameLabel" destination="Qk6-vi-56O" id="anb-2D-nZr"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cart_select_address" width="6" height="11"/>
+    </resources>
+</document>

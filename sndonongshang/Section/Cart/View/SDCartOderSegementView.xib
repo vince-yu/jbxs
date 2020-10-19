@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SDCartOderSegementView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vss-DD-whG">
+                    <rect key="frame" x="5" y="5" width="365" height="45"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="order_segement_bg" translatesAutoresizingMaskIntoConstraints="NO" id="GMs-MW-GHE">
+                            <rect key="frame" x="0.0" y="0.0" width="365" height="45"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="GMs-MW-GHE" firstAttribute="top" secondItem="vss-DD-whG" secondAttribute="top" id="WJF-qe-Ph7"/>
+                        <constraint firstAttribute="bottom" secondItem="GMs-MW-GHE" secondAttribute="bottom" id="tpG-7w-gOX"/>
+                        <constraint firstItem="GMs-MW-GHE" firstAttribute="leading" secondItem="vss-DD-whG" secondAttribute="leading" id="yZE-2j-rf8"/>
+                        <constraint firstAttribute="trailing" secondItem="GMs-MW-GHE" secondAttribute="trailing" id="zA3-Cy-K3k"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_order_segment_right" translatesAutoresizingMaskIntoConstraints="NO" id="tL6-kx-QGM">
+                    <rect key="frame" x="150" y="0.0" width="225" height="50"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_order_segment_left" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-5Z-gHH">
+                    <rect key="frame" x="0.0" y="0.0" width="225" height="50"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bp4-ue-DPa">
+                    <rect key="frame" x="62.5" y="10" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="m3Y-lf-zwr"/>
+                        <constraint firstAttribute="height" constant="30" id="tqh-eJ-gLy"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="16"/>
+                    <state key="normal" title="送货上门">
+                        <color key="titleColor" red="0.18039215689999999" green="0.18823529410000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="leftClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="OG2-0t-EYU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="akz-kP-mBh">
+                    <rect key="frame" x="232.5" y="10" width="80" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="2hE-Pj-Zgn"/>
+                        <constraint firstAttribute="width" constant="80" id="Ker-On-GjO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Medium" family="PingFang SC" pointSize="16"/>
+                    <state key="normal" title="到店自取">
+                        <color key="titleColor" red="0.18039215689999999" green="0.18823529410000001" blue="0.18039215689999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="rightClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="1BP-Ay-nJe"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart_order_tag" translatesAutoresizingMaskIntoConstraints="NO" id="Frt-VW-hWZ">
+                    <rect key="frame" x="312.5" y="18" width="50" height="14"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Xxo-jH-nei"/>
+                        <constraint firstAttribute="height" constant="14" id="as8-Lm-p0W"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="akz-kP-mBh" firstAttribute="centerY" secondItem="tL6-kx-QGM" secondAttribute="centerY" id="7sJ-Jk-4R1"/>
+                <constraint firstItem="VHE-5Z-gHH" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="F1W-RB-F6s"/>
+                <constraint firstAttribute="trailing" secondItem="tL6-kx-QGM" secondAttribute="trailing" id="HLK-e4-BVy"/>
+                <constraint firstItem="VHE-5Z-gHH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="LGl-wA-H5A"/>
+                <constraint firstItem="tL6-kx-QGM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Lwa-eu-wZk"/>
+                <constraint firstItem="bp4-ue-DPa" firstAttribute="centerX" secondItem="VHE-5Z-gHH" secondAttribute="centerX" constant="-10" id="MGU-cP-amR"/>
+                <constraint firstItem="tL6-kx-QGM" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.6" id="XYk-9x-EDK"/>
+                <constraint firstItem="Frt-VW-hWZ" firstAttribute="centerY" secondItem="akz-kP-mBh" secondAttribute="centerY" id="bbz-dA-ihF"/>
+                <constraint firstItem="akz-kP-mBh" firstAttribute="centerX" secondItem="tL6-kx-QGM" secondAttribute="centerX" constant="10" id="bt2-dY-j3f"/>
+                <constraint firstItem="vss-DD-whG" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="cLQ-VT-W2Q"/>
+                <constraint firstAttribute="bottom" secondItem="tL6-kx-QGM" secondAttribute="bottom" id="dut-Mh-Gfg"/>
+                <constraint firstAttribute="bottom" secondItem="VHE-5Z-gHH" secondAttribute="bottom" id="dzF-7y-bRw"/>
+                <constraint firstItem="bp4-ue-DPa" firstAttribute="centerY" secondItem="VHE-5Z-gHH" secondAttribute="centerY" id="jhc-pO-i1M"/>
+                <constraint firstItem="vss-DD-whG" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="5" id="nIR-Mz-83m"/>
+                <constraint firstAttribute="trailing" secondItem="vss-DD-whG" secondAttribute="trailing" constant="5" id="wpL-V9-YWW"/>
+                <constraint firstItem="Frt-VW-hWZ" firstAttribute="leading" secondItem="akz-kP-mBh" secondAttribute="trailing" id="xVl-Hj-Z0A"/>
+                <constraint firstAttribute="bottom" secondItem="vss-DD-whG" secondAttribute="bottom" id="xx0-Om-W2u"/>
+                <constraint firstItem="VHE-5Z-gHH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="zoP-Cm-gBi"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="bgImageView" destination="GMs-MW-GHE" id="6u7-4A-biJ"/>
+                <outlet property="bgView" destination="vss-DD-whG" id="Irf-V8-b97"/>
+                <outlet property="leftBtn" destination="bp4-ue-DPa" id="QdS-Cg-mE3"/>
+                <outlet property="rightBtn" destination="akz-kP-mBh" id="hiU-hM-14m"/>
+                <outlet property="selectedLeft" destination="VHE-5Z-gHH" id="eSe-yj-QGp"/>
+                <outlet property="selectedRight" destination="tL6-kx-QGM" id="Ham-43-WYs"/>
+                <outlet property="tagImageView" destination="Frt-VW-hWZ" id="IlQ-O9-2EX"/>
+            </connections>
+            <point key="canvasLocation" x="120.8" y="128.63568215892056"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="cart_order_segment_left" width="420" height="100"/>
+        <image name="cart_order_segment_right" width="420" height="100"/>
+        <image name="cart_order_tag" width="50" height="14"/>
+        <image name="order_segement_bg" width="150" height="40"/>
+    </resources>
+</document>
